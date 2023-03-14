@@ -45,6 +45,10 @@ body{
       margin-top: 30%;
 }
 
+.container > nav button{
+      cursor: pointer;
+}
+
 .weatherContainer{
       border: dotted 2px chocolate;
       border-top-right-radius: 2rem;
