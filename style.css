@@ -1,0 +1,100 @@
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      border: none;
+      color: antiquewhite;
+
+}
+
+html{
+      height: 100%;
+}
+
+body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      background: bisque;
+}
+
+.container{
+      display: grid;
+      /* justify-content: space-between; */
+      align-items: center;
+      grid-template-columns: 50% 40%;
+      gap: 2rem;
+      height: auto;
+      width: 30rem;
+      padding: 1rem;
+      /* background: burlywood; */
+      background-image: url(https://bit.ly/3Td3pvu);
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      /* background-position: center; */
+      border-top-left-radius: 5rem;
+      border-bottom-right-radius: 5rem;
+      box-shadow: #2b2d42 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+     
+}
+
+.container > div,
+.container > nav{
+      margin-top: 30%;
+}
+
+.weatherContainer{
+      border: dotted 2px chocolate;
+      border-top-right-radius: 2rem;
+      border-right: none;
+      padding: 0.4rem;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.weatherContainer .temp{
+      font-size: 5rem;
+      /* margin-bottom: -5rem; */
+}
+
+nav{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+nav form{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+}
+
+nav .searchArea{
+      background: none;
+      outline: none;
+      padding: 1rem;
+      width: 100%;
+      border-top-left-radius: 1rem;
+      border-top: solid chocolate 2px;
+      border-bottom: solid chocolate 1px;
+      border-left: solid chocolate 1.5px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+nav .searchButton{
+      background-color: chocolate;
+      padding: 0.5rem;
+      width: 50%;
+      border-radius: 1rem;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@media screen and (max-width: 460px){
+      .container{
+            display: grid;
+            grid-template-columns: none;
+           
+      }
+}
